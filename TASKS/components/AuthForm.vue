@@ -219,8 +219,8 @@ export default {
         const { updated_at, created_at, ...user } = res.msg
 
         // @TODO:Set the user details on the store
-        this.$store.dispatch('setAccessToken', accessToken)
-        this.$store.dispatch('setUser', { isLoggedIn: true, user })
+        await this.$store.dispatch('setAccessToken', accessToken)
+        await this.$store.dispatch('setUser', { isLoggedIn: true, user })
 
         //Redirect to the route page
         this.$router.push('/tasks')
