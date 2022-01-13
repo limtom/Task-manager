@@ -218,6 +218,7 @@ export default {
             authorization: `Bearer ${accessToken}`,
           },
         })
+        console.log(res)
 
         const { updated_at, created_at, ...user } = res.msg
 
