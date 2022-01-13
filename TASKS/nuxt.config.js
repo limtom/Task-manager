@@ -46,7 +46,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl:'https://tasks-manager-appl.herokuapp.com/api/v1'
+    baseUrl:process.env.BASE_URL || 'http://localhost:5000/api/v1'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
