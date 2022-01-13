@@ -10,6 +10,8 @@
 import CreateTask from '~/components/CreateTask.vue'
 
 export default {
+  name:'Create-Task',
+  middleware:'auth',
   components: {
     CreateTask,
   },
@@ -23,6 +25,5 @@ export default {
     }
   },
   layout: 'main',
-  middleware:'auth'
 }
 </script>

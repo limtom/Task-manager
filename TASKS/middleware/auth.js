@@ -2,10 +2,8 @@
  * Auth middleware
  */
 export default function ({ store, redirect }) {
-    let user = store.state.user;
-    if (user) {
-        //Let them in
-    } else {
-        redirect('/')
-    }
+    const user = store.state.user ? true : false;
+    if (!user) {
+        return redirect('/')
+    } 
 }

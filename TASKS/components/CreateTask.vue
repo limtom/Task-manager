@@ -144,7 +144,7 @@ export default {
           this.text = res.msg
           this.snackbar = true
           // Update the task by dispatching an action
-          this.$store.dispatch('updateTasks')
+          await this.$store.dispatch('updateTasks')
 
           this.$refs.form.reset()
         }
