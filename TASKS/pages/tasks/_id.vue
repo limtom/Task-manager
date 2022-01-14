@@ -22,7 +22,7 @@ export default {
       ],
     }
   },
-  layout: 'main',
+  layout: 'tasks',
   middleware:'auth'
 }
 </script>

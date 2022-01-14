@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6" class="pa-0">
+    <v-col cols="12" sm="8" md="6" class="pa-1">
       <create-task />
     </v-col>
   </v-row>
@@ -24,6 +24,6 @@ export default {
       ],
     }
   },
-  layout: 'main',
+  layout: 'tasks',
 }
 </script>

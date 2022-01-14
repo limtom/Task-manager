@@ -6,7 +6,7 @@
       >
         Edit Task
       </v-card-title>
-      <v-card-text class="pa-6 pb-0 pt-0">
+      <v-card-text class="pa-sm-6 pb-0 pt-0">
         <v-form
           ref="form"
           v-model="valid"
@@ -14,7 +14,7 @@
           class="d-flex flex-column"
         >
           <v-row dense>
-            <v-col cols="12" sm="3" md="3">
+            <v-col cols="3" sm="3" md="3" class="d-flex flex-column align-content-space-between">
               <v-list-item-content class="black--text text--darken-4"
                 >Task ID</v-list-item-content
               >
@@ -25,7 +25,7 @@
                 >Completed</v-list-item-content
               >
             </v-col>
-            <v-col cols="12" sm="9" md="9">
+            <v-col cols="9" sm="9" md="9">
               <v-list-item-content class="black--text text--darken-4">{{
                 getTaskToEdit.task_id
               }}</v-list-item-content>

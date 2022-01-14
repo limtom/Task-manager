@@ -6,7 +6,7 @@
       >
         Task Manager
       </v-card-title>
-      <v-card-text class="pa-6 pb-0 pt-0">
+      <v-card-text class="pa-3 pa-sm-6 pb-0 pt-0">
         <v-form ref="form" v-model="valid" lazy-validation class="d-flex">
           <v-text-field
             filled
@@ -34,7 +34,7 @@
         </v-form>
       </v-card-text>
     </v-card>
-    <v-container class="pa-4 text-center">
+    <v-container class="pa-2 text-center">
       <v-row class="d-flex flex-column" align="center" justify="center">
         <template v-for="(task, i) in paginatedTasks.data">
           <v-col :key="i" cols="12" sm="12" md="12">
@@ -44,7 +44,7 @@
                 width="450"
                 :elevation="hover ? 12 : 2"
                 :class="{ 'on-hover': hover }"
-                class="mx-auto task-card"
+                class="pl-0 pr-0 mx-auto task-card"
               >
                 <v-card-title
                   class="text-h6 text-subtitle-1 font-weight-light mx-auto"
@@ -76,7 +76,7 @@
                       >mdi-pencil</v-icon
                     ></v-btn
                   >
-                  <v-btn small nuxt icon class="mr-2">
+                  <v-btn small nuxt icon class="mr-sm-2">
                     <v-icon
                       color="red darken-4"
                       small

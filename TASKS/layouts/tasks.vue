@@ -87,9 +87,7 @@
     </v-app-bar>
     <v-main>
       <v-container class="fill-height">
-        <v-row>
-          <nuxt />
-        </v-row>
+        <nuxt />
       </v-container>
     </v-main>
   </v-app>
@@ -98,7 +96,7 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'main',
+  name: 'task',
   data() {
     return {
       userName: '',
