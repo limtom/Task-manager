@@ -194,9 +194,6 @@ export default {
             { withCredentials: true }
           )
 
-          //Set the authorization header
-          this.$axios.setToken(logInfo.data.accessToken, 'Bearer')
-
           //ckear thr form
           this.$refs.form2.reset()
 
@@ -218,7 +215,6 @@ export default {
             authorization: `Bearer ${accessToken}`,
           },
         })
-        console.log(res)
 
         const { updated_at, created_at, ...user } = res.msg
 

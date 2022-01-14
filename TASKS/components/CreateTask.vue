@@ -36,7 +36,7 @@
     </v-card>
     <v-container class="pa-2 text-center">
       <v-row class="d-flex flex-column" align="center" justify="center">
-        <template v-for="(task, i) in paginatedTasks.data">
+        <template v-for="(task, i) in tasks">
           <v-col :key="i" cols="12" sm="12" md="12">
             <v-hover v-slot="{ hover }">
               <v-card
@@ -173,7 +173,7 @@ export default {
         this.text = res.msg
         this.snackbar = true
         // Update the task by dispatching an action
-        this.$store.dispatch('updateTasks')
+        await this.$store.dispatch('updateTasks')
       } catch (error) {
         this.color = 'error'
         this.text = error.response.data.msg
