@@ -36,7 +36,7 @@
     </v-card>
     <v-container class="pa-2 text-center">
       <v-row class="d-flex flex-column" align="center" justify="center">
-        <template v-for="(task, i) in tasks">
+        <template v-for="(task, i) in paginatedTasks.data">
           <v-col :key="i" cols="12" sm="12" md="12">
             <v-hover v-slot="{ hover }">
               <v-card
