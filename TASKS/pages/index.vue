@@ -16,7 +16,7 @@ export default {
   },
   head() {
     return {
-      title: 'SIGN UP AND LOGIN FORM',
+      title: 'A TASK MANAGER APPLICATION',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Authentication form' },
